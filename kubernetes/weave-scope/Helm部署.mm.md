@@ -31,6 +31,10 @@ tar -zxvf weave-scope-1.1.11.tgz
 # 修改访问方式
 sed -i "s@\ type:\ \"ClusterIP\"@ type: \"NodePort\"@" weave-scope/values.yaml
 ```
+### 创建命令空间
+```bash
+kubectl create namespace common-service
+```
 ### 安装
 ```bash
 helm install  weave-scope --namespace common-service -f weave-scope/values.yaml weave-scope/
