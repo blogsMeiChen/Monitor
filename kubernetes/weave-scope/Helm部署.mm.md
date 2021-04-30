@@ -43,3 +43,7 @@ helm install  weave-scope --namespace weave-scope -f weave-scope/values.yaml wea
 ```bash
 helm list -n weave-scope
 ```
+### 查看服务状态
+```bash
+helm status common-service -n weave-scope
+```
