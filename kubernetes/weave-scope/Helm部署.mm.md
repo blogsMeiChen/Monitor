@@ -39,3 +39,7 @@ kubectl create namespace common-service
 ```bash
 helm install  weave-scope --namespace common-service -f weave-scope/values.yaml weave-scope/
 ```
+### 查看
+```bash
+helm list -n weave-scope
+```
