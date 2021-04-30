@@ -33,5 +33,5 @@ sed -i "s@\ type:\ \"ClusterIP\"@ type: \"NodePort\"@" weave-scope/values.yaml
 ```
 ### 安装
 ```bash
-helm install -n weave-scope --namespace common-service -f weave-scope/values.yaml weave-scope/
+helm install  weave-scope --namespace common-service -f weave-scope/values.yaml weave-scope/
 ```
