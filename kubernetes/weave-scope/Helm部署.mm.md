@@ -47,3 +47,5 @@ helm list -n weave-scope
 ```bash
 helm status common-service -n weave-scope
 ```
+### 验证pods svc deploy
+kubectl get all -n weave-scope -o wide
